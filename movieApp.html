@@ -1,0 +1,41 @@
+<div class="container-fluid">  
+ 
+	<div class="row">  
+		<div class="col-sm-1">  
+			Your Ranking  
+		</div>  
+		<div class="col-sm-1">  
+			IMDb Ranking  
+		</div>  
+
+		<div class="col-sm-3 col-sm-offset-1">  
+			Title  
+		</div>  
+
+		<div class="col-sm-1">  
+			Year  
+
+		</div>  
+
+		<div class="col-sm-1">  
+			Rating  
+		</div>  
+
+		<div class="col-sm-2">  
+			Move  
+		</div>  
+	</div>  
+
+
+	<div class="row" ng-repeat="movie in movieData.movies">  
+		<div class="col-sm-1">{{$index + 1}}</div>  
+		<div class="col-sm-1">{{movie.ranking}}</div>  
+		<div class="col-sm-1"><img ng-src="{{movie.urlPoster}}"></div>  
+		<div class="col-sm-3">{{movie.title}}</div>  
+		<div class="col-sm-1">{{movie.year}}</div>  
+		<div class="col-sm-1">{{movie.rating}}</div>  
+		<div class="col-sm-1"><a href="" ng-click="movieData.moveUp($index)">Up</a></div>  
+		<div class="col-sm-1"><a href="" ng-click="movieData.moveDown($index)">Down</a></div>  
+	</div>  
+
+</div>

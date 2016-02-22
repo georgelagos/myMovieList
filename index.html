@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Movie List</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	
+</head>
+
+<body>
+
+
+<div ng-app="movieApp">
+
+	<div ng-controller="MovieCtrl as movieData">
+	
+		<top-ten-movies></top-ten-movies>
+	
+	</div>
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.26/angular.js"></script>
+<script src="movieAppModule.js"></script>
+<script src="movieAppController.js"></script>
+<script src="movieAppFactory.js"></script>
+<script src="top-ten-movies-directive.js"></script>
+</body>
+</html>
